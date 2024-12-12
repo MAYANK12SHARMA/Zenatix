@@ -3,8 +3,8 @@ import os
 from ua.settings import *
 from ua.settings import BASE_DIR
 
-ALLOWED_HOSTS = 'zenatixproject-hbcmc2b9f3ambph8.centralus-01.azurewebsites.net'
-CSRF_TRUSTED_ORIGINS = ['https://' + os.environ.get('ALLOWED_HOSTS')]
+ALLOWED_HOSTS = [os.environ('WEBSITE_HOSTNAME')]
+CSRF_TRUSTED_ORIGINS = ['https://' + os.environ.get('WEBSITE_HOSTNAME')]
 DEBUG = False
 
 MIDDLEWARE = [
