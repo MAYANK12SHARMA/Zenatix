@@ -3,7 +3,7 @@ import os
 from ua.settings import *
 from ua.settings import BASE_DIR
 
-ALLOWED_HOSTS = ['zenatixproject-hbcmc2b9f3ambph8.centralus-01.azurewebsites.net']
+ALLOWED_HOSTS = 'zenatixproject-hbcmc2b9f3ambph8.centralus-01.azurewebsites.net'
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ.get('ALLOWED_HOSTS')]
 DEBUG = False
 
